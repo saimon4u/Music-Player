@@ -399,7 +399,7 @@ header .song_side{
 header .song_side::before{
     content: '';
     position: absolute;
-    background: url('artist/arnab.png');
+    background: url('artist/ronaldo.png');
     left: 900px;
     background-repeat: no-repeat;
     width: 100%;
