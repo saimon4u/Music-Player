@@ -194,7 +194,6 @@ songs.forEach(element => {
     `;
     search_result.appendChild(card);
 });
-
 let input = document.getElementsByTagName('input')[0];
 input.addEventListener('keyup', ()=>{
     let val = input.value.toUpperCase();
@@ -309,21 +308,23 @@ back.addEventListener('click', ()=>{
         index = Array.from(document.getElementsByClassName('songItem')).length;
     }
     music.src = `music/${index}.mp3`;
+    poster_master_play.src = `img/${index}.jpg`;
     music.play();
     masterPlay.classList.remove('bi-play-fill');
     masterPlay.classList.add('bi-pause');
+    download.href = `music/${index}.mp3`;
     let songsTitles = songs.filter((els)=>{
         return els.id == index;
     });
     songsTitles.forEach(elss =>{
         let {songName} = elss;
         title.innerHTML = songName;
+        download.setAttribute('download', songName);
     });
-    // makeAllPlay();
-    // el.target.classList.remove('bi-play-fill');
-    // el.target.classList.add('bi-pause');
+    makeAllPlay();
+    el.target.classList.remove('bi-play-fill');
+    el.target.classList.add('bi-pause');
     wave.classList.add('active1');
-    poster_master_play.src = `img/${index}.jpg`;
 });
 
 next.addEventListener('click', ()=>{
@@ -333,17 +334,22 @@ next.addEventListener('click', ()=>{
     }
     music.src = `music/${index}.mp3`;
     music.play();
+    poster_master_play.src = `img/${index}.jpg`;
     masterPlay.classList.remove('bi-play-fill');
     masterPlay.classList.add('bi-pause');
+    download.href = `music/${index}.mp3`;
     let songsTitles = songs.filter((els)=>{
         return els.id == index;
     });
     songsTitles.forEach(elss =>{
         let {songName} = elss;
         title.innerHTML = songName;
+        download.setAttribute('download', songName);
     });
+    makeAllPlay();
+    el.target.classList.remove('bi-play-fill');
+    el.target.classList.add('bi-pause');
     wave.classList.add('active1');
-    poster_master_play.src = `img/${index}.jpg`;
 });
 
 //setting left right scroll button of popular song list
@@ -476,4 +482,24 @@ music.addEventListener('ended', ()=>{
             randomMusic();
             break;
     }
-})
+});
+
+let start = document.getElementById('play1');
+start.addEventListener('click', ()=>{
+    index = Math.floor((Math.random() * songs.length) + 1);
+    poster_master_play.src = `img/${index}.jpg`;
+    music.src = `music/${index}.mp3`;
+    music.play();
+    masterPlay.classList.remove('bi-play-fill');
+    masterPlay.classList.add('bi-pause');
+    download.href = `music/${index}.mp3`;
+    let songsTitles = songs.filter((els)=>{
+        return els.id == index;
+    });
+    songsTitles.forEach(elss =>{
+        let {songName} = elss;
+        title.innerHTML = songName;
+        download.setAttribute('download', songName);
+    });
+    wave.classList.add('active1');
+});

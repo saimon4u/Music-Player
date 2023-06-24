@@ -1,108 +1,84 @@
 
-const music = new Audio("music/atif/1.mp3");
+const music = new Audio("music/tahsan/1.mp3");
 
 const songs = [
     {
         id: '1',
-        songName: `Aadat<br> 
-        <div class="subtitle">Atif Aslam</div>`,
-        poster: "img/atif/1.jpg"
+        songName: `Alo Alo<br> 
+        <div class="subtitle">Tahsan Khan</div>`,
+        poster: "img/tahsan/1.jpg"
     },
     {
         id: '2',
-        songName: `Musafir<br> 
-        <div class="subtitle">Atif Aslam</div>`,
-        poster: "img/atif/2.jpg"
+        songName: `Bhalobashi Tai<br> 
+        <div class="subtitle">Tahsan Khan</div>`,
+        poster: "img/tahsan/2.jpg"
     },
     {
         id: '3',
-        songName: `Pehli Dafa<br> 
-        <div class="subtitle">Atif Aslam</div>`,
-        poster: "img/atif/3.jpg"
+        songName: `Chile Amar<br> 
+        <div class="subtitle">Tahsan Khan</div>`,
+        poster: "img/tahsan/3.jpg"
     },
     {
         id: '4',
-        songName: `Be Intehaan<br> 
-        <div class="subtitle">Atif Aslam</div>`,
-        poster: "img/atif/4.jpg"
+        songName: `Ektai Tumi<br> 
+        <div class="subtitle">Tahsan Khan</div>`,
+        poster: "img/tahsan/4.jpg"
     },
     {
         id: '5',
-        songName: `Dekhte Dekhte<br> 
-        <div class="subtitle">Atif Aslame</div>`,
-        poster: "img/atif/5.jpg"
+        songName: `Joto Vul<br> 
+        <div class="subtitle">Tahsan Khane</div>`,
+        poster: "img/tahsan/5.jpg"
     },
     {
         id: '6',
-        songName: `Dil Diya Gallan<br> 
-        <div class="subtitle">Atif Aslam</div>`,
-        poster: "img/atif/6.jpg"
+        songName: `Ke Tumi<br> 
+        <div class="subtitle">Tahsan Khan</div>`,
+        poster: "img/tahsan/6.jpg"
     },
     {
         id: '7',
-        songName: `Jeena Jeena<br> 
-        <div class="subtitle">Atif Aslam</div>`,
-        poster: "img/atif/7.jpg"
+        songName: `Keu Na Januk<br> 
+        <div class="subtitle">Tahsan Khan</div>`,
+        poster: "img/tahsan/7.jpg"
     },
     {
         id: '8',
-        songName: `Pehli Nazar Mein<br> 
-        <div class="subtitle">Atif Aslam</div>`,
-        poster: "img/atif/8.jpg"
+        songName: `Prottaborton<br> 
+        <div class="subtitle">Tahsan Khan</div>`,
+        poster: "img/tahsan/8.jpg"
     },
     {
         id: '9',
-        songName: `Rang Jo Lagyo<br> 
-        <div class="subtitle">Atif Aslam</div>`,
-        poster: "img/atif/9.jpg"
+        songName: `Prematal<br> 
+        <div class="subtitle">Tahsan Khan</div>`,
+        poster: "img/tahsan/9.jpg"
     },
     {
         id: '10',
-        songName: `Piya Ore Piya<br> 
-        <div class="subtitle">Atif Aslam</div>`,
-        poster: "img/atif/10.jpg"
+        songName: `Prem Tumi<br> 
+        <div class="subtitle">Tahsan Khan</div>`,
+        poster: "img/tahsan/10.jpg"
     },
     {
         id: '11',
-        songName: `Jeene Laga Hoon<br> 
-        <div class="subtitle">Atif Aslam</div>`,
-        poster: "img/atif/11.jpg"
+        songName: `Bhalobashar Mane<br> 
+        <div class="subtitle">Tahsan Khan</div>`,
+        poster: "img/tahsan/11.jpg"
     },
     {
         id: '12',
-        songName: `Tera Hua<br> 
-        <div class="subtitle">Atif Aslam</div>`,
-        poster: "img/atif/12.jpg"
+        songName: `Chuye Dile Mon<br> 
+        <div class="subtitle">Tahsan Khan</div>`,
+        poster: "img/tahsan/12.jpg"
     },
     {
         id: '13',
-        songName: `Tere Bin<br> 
-        <div class="subtitle">Atif Aslam</div>`,
-        poster: "img/atif/13.jpg"
-    },
-    {
-        id: '14',
-        songName: `Tere Liye<br> 
-        <div class="subtitle">Atif Aslam</div>`,
-        poster: "img/atif/14.jpg"
-    },
-    {
-        id: '15',
-        songName: `Tere Sang Yaara<br> 
-        <div class="subtitle">Atif Aslam</div>`,
-        poster: "img/atif/15.jpg"
-    },
-    {
-        id: '16',
-        songName: `Tu Chahiye<br> 
-        <div class="subtitle">Atif Aslam</div>`,
-        poster: "img/atif/16.jpg"
-    },
-    {
-        id: '17',
-        songName: `Tu Jaane Na<br> 
-        <div class="subtitle">Atif Aslam</div>`,
-        poster: "img/atif/17.jpg"
+        songName: `Tumi Moy<br> 
+        <div class="subtitle">Tahsan Khan</div>`,
+        poster: "img/tahsan/13.jpg"
     }
 ];
 Array.from(document.getElementsByClassName('songItem')).forEach((e,i)=>{
@@ -182,12 +158,12 @@ let download = document.getElementById('download');
 Array.from(document.getElementsByClassName('playListPlay')).forEach((e)=>{
     e.addEventListener('click',(el)=>{
         index = el.target.id;
-        music.src = `music/atif/${index}.mp3`;
-        poster_master_play.src = `img/atif/${index}.jpg`;
+        music.src = `music/tahsan/${index}.mp3`;
+        poster_master_play.src = `img/tahsan/${index}.jpg`;
         music.play();
         masterPlay.classList.remove('bi-play-fill');
         masterPlay.classList.add('bi-pause');
-        download.href = `music/atif/${index}.mp3`;
+        download.href = `music/tahsan/${index}.mp3`;
         let songsTitles = songs.filter((els)=>{
             return els.id == index;
         });
@@ -266,12 +242,12 @@ back.addEventListener('click', ()=>{
     if(index==0){
         index = Array.from(document.getElementsByClassName('songItem')).length;
     }
-    music.src = `music/atif/${index}.mp3`;
+    music.src = `music/tahsan/${index}.mp3`;
     music.play();
-    poster_master_play.src = `img/atif/${index}.jpg`;
+    poster_master_play.src = `img/tahsan/${index}.jpg`;
     masterPlay.classList.remove('bi-play-fill');
     masterPlay.classList.add('bi-pause');
-    download.href = `music/atif/${index}.mp3`;
+    download.href = `music/tahsan/${index}.mp3`;
     let songsTitles = songs.filter((els)=>{
         return els.id == index;
     });
@@ -291,12 +267,12 @@ next.addEventListener('click', ()=>{
     if(index==Array.from(document.getElementsByClassName('songItem')).length + 1){
         index = 1;
     }
-    music.src = `music/atif/${index}.mp3`;
+    music.src = `music/tahsan/${index}.mp3`;
     music.play();
-    poster_master_play.src = `img/atif/${index}.jpg`;
+    poster_master_play.src = `img/tahsan/${index}.jpg`;
     masterPlay.classList.remove('bi-play-fill');
     masterPlay.classList.add('bi-pause');
-    download.href = `music/atif/${index}.mp3`;
+    download.href = `music/tahsan/${index}.mp3`;
     let songsTitles = songs.filter((els)=>{
         return els.id == index;
     });
@@ -368,12 +344,12 @@ const nextMusic = ()=>{
     else{
         index++;
     }
-    poster_master_play.src = `img/atif/${index}.jpg`;
-    music.src = `music/atif/${index}.mp3`;
+    poster_master_play.src = `img/tahsan/${index}.jpg`;
+    music.src = `music/tahsan/${index}.mp3`;
     music.play();
     masterPlay.classList.remove('bi-play-fill');
     masterPlay.classList.add('bi-pause');
-    download.href = `music/atif/${index}.mp3`;
+    download.href = `music/tahsan/${index}.mp3`;
     let songsTitles = songs.filter((els)=>{
         return els.id == index;
     });
@@ -387,12 +363,12 @@ const nextMusic = ()=>{
 
 const repeatMusic = ()=>{
     index;
-    poster_master_play.src = `img/atif/${index}.jpg`;
-    music.src = `music/atif/${index}.mp3`;
+    poster_master_play.src = `img/tahsan/${index}.jpg`;
+    music.src = `music/tahsan/${index}.mp3`;
     music.play();
     masterPlay.classList.remove('bi-play-fill');
     masterPlay.classList.add('bi-pause');
-    download.href = `music/atif/${index}.mp3`;
+    download.href = `music/tahsan/${index}.mp3`;
     let songsTitles = songs.filter((els)=>{
         return els.id == index;
     });
@@ -411,12 +387,12 @@ const randomMusic = ()=>{
     else{
         index = Math.floor((Math.random() * songs.length) + 1);
     }
-    poster_master_play.src = `img/atif/${index}.jpg`;
-    music.src = `music/atif/${index}.mp3`;
+    poster_master_play.src = `img/tahsan/${index}.jpg`;
+    music.src = `music/tahsan/${index}.mp3`;
     music.play();
     masterPlay.classList.remove('bi-play-fill');
     masterPlay.classList.add('bi-pause');
-    download.href = `music/atif/${index}.mp3`;
+    download.href = `music/tahsan/${index}.mp3`;
     let songsTitles = songs.filter((els)=>{
         return els.id == index;
     });
@@ -445,12 +421,12 @@ music.addEventListener('ended', ()=>{
 let start = document.getElementById('play1');
 start.addEventListener('click', ()=>{
     index = Math.floor((Math.random() * songs.length) + 1);
-    poster_master_play.src = `img/atif/${index}.jpg`;
-    music.src = `music/atif/${index}.mp3`;
+    poster_master_play.src = `img/tahsan/${index}.jpg`;
+    music.src = `music/tahsan/${index}.mp3`;
     music.play();
     masterPlay.classList.remove('bi-play-fill');
     masterPlay.classList.add('bi-pause');
-    download.href = `music/atif/${index}.mp3`;
+    download.href = `music/tahsan/${index}.mp3`;
     let songsTitles = songs.filter((els)=>{
         return els.id == index;
     });
