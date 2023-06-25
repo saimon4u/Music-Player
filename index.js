@@ -328,28 +328,40 @@ back.addEventListener('click', ()=>{
 });
 
 next.addEventListener('click', ()=>{
-    index++;
-    if(index > Array.from(document.getElementsByClassName('songItem')).length){
-        index = 1;
+    // index++;
+    // if(index > Array.from(document.getElementsByClassName('songItem')).length){
+    //     index = 1;
+    // }
+    // music.src = `music/${index}.mp3`;
+    // music.play();
+    // poster_master_play.src = `img/${index}.jpg`;
+    // masterPlay.classList.remove('bi-play-fill');
+    // masterPlay.classList.add('bi-pause');
+    // download.href = `music/${index}.mp3`;
+    // let songsTitles = songs.filter((els)=>{
+    //     return els.id == index;
+    // });
+    // songsTitles.forEach(elss =>{
+    //     let {songName} = elss;
+    //     title.innerHTML = songName;
+    //     download.setAttribute('download', songName);
+    // });
+    // makeAllPlay();
+    // el.target.classList.remove('bi-play-fill');
+    // el.target.classList.add('bi-pause');
+    // wave.classList.add('active1');
+    let b = shuffle.innerHTML;
+    switch (b) {
+        case 'Next':
+            nextMusic();
+            break;
+        case 'repeat':
+            repeatMusic();
+            break;
+        case 'random':
+            randomMusic();
+            break;
     }
-    music.src = `music/${index}.mp3`;
-    music.play();
-    poster_master_play.src = `img/${index}.jpg`;
-    masterPlay.classList.remove('bi-play-fill');
-    masterPlay.classList.add('bi-pause');
-    download.href = `music/${index}.mp3`;
-    let songsTitles = songs.filter((els)=>{
-        return els.id == index;
-    });
-    songsTitles.forEach(elss =>{
-        let {songName} = elss;
-        title.innerHTML = songName;
-        download.setAttribute('download', songName);
-    });
-    makeAllPlay();
-    el.target.classList.remove('bi-play-fill');
-    el.target.classList.add('bi-pause');
-    wave.classList.add('active1');
 });
 
 //setting left right scroll button of popular song list
@@ -378,7 +390,7 @@ pop_art_left.addEventListener('click', ()=>{
 let shuffle = document.getElementById('shuffle');
 shuffle.addEventListener('click', ()=>{
     let a = shuffle.innerHTML;
-    console.log(a);
+    // console.log(a);
     switch (a) {
         case 'Next':
             shuffle.classList.remove('bi-music-note-beamed');
@@ -423,6 +435,9 @@ const nextMusic = ()=>{
         title.innerHTML = songName;
         download.setAttribute('download', songName);
     });
+    makeAllPlay();
+    el.target.classList.remove('bi-play-fill');
+    el.target.classList.add('bi-pause');
     wave.classList.add('active1');
 }
 
