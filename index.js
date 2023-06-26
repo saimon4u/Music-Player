@@ -1,5 +1,8 @@
+// getting the first music as default from directory
 
 const music = new Audio("music/1.mp3");
+
+//Making the list of Songs available
 
 const songs = [
     {
@@ -147,10 +150,15 @@ const songs = [
         poster: "img/24.jpg"
     }
 ];
+
+// getting all the poster and names of songs from songs and set their values to HTML
+
 Array.from(document.getElementsByClassName('songItem')).forEach((e,i)=>{
     e.getElementsByTagName('img')[0].src = songs[i].poster;
     e.getElementsByTagName('h5')[0].innerHTML = songs[i].songName;
 });
+
+// this function removes all the pause buttons and add a play button to the current playing song
 
 const makeAllPlay = ()=>{
     let p;
@@ -159,6 +167,8 @@ const makeAllPlay = ()=>{
         p.classList.add('bi-play-fill');
     })
 };
+
+// setting the play/pause button's functionality
 
 let masterPlay = document.getElementById('masterPlay');
 let wave = document.getElementById('wave');
@@ -179,6 +189,7 @@ masterPlay.addEventListener('click',()=>{
     makeAllPlay();
 });
 
+// adding to search results with their title and poster
 
 let search_result = document.getElementsByClassName('search_result')[0];
 songs.forEach(element => {
@@ -194,6 +205,9 @@ songs.forEach(element => {
     `;
     search_result.appendChild(card);
 });
+
+// getting the input from search bar and showing the search results
+
 let input = document.getElementsByTagName('input')[0];
 input.addEventListener('keyup', ()=>{
     let val = input.value.toUpperCase();
@@ -216,6 +230,8 @@ input.addEventListener('keyup', ()=>{
     }
 
 })
+
+// after clicking an song playing that song by this section
 
 let index = 0;
 let poster_master_play = document.getElementById('poster_master_play');
@@ -244,6 +260,9 @@ Array.from(document.getElementsByClassName('playListPlay')).forEach((e)=>{
     })
 });
 
+
+// setting the current/start time value and make the dot and seek bar move
+
 let current_start = document.getElementById('current_start');
 let current_end = document.getElementById('current_end');
 let seek = document.getElementById('seek');
@@ -270,9 +289,14 @@ music.addEventListener('timeupdate', ()=>{
     bar2.style.width = `${seekbar}%`;
     dot.style.left = `${seekbar}%`;
 });
+
+// make the input bar move
+
 seek.addEventListener('change', ()=>{
     music.currentTime = seek.value * music.duration / 100;
 });
+
+// setting the volume functionality
 
 let vol_icon = document.getElementById('vol_icon');
 let vol = document.getElementById('vol');
@@ -299,6 +323,8 @@ vol.addEventListener('change', ()=>{
     vol_dot.style.left = `${vol_a}%`;
     music.volume = vol_a/100;
 });
+
+// setting the back and next buttons
 
 let back = document.getElementById('back');
 let next = document.getElementById('next');
@@ -375,6 +401,7 @@ pop_song_right.addEventListener('click', ()=>{
 pop_song_left.addEventListener('click', ()=>{
     pop_song.scrollLeft -= 300;
 });
+
 //setting left right scroll button of popular artist list
 
 let pop_art_left = document.getElementById('pop_art_left');
@@ -386,6 +413,8 @@ pop_art_right.addEventListener('click', ()=>{
 pop_art_left.addEventListener('click', ()=>{
     item.scrollLeft -= 300;
 });
+
+// setting the shuffle functionality 
 
 let shuffle = document.getElementById('shuffle');
 shuffle.addEventListener('click', ()=>{
@@ -436,8 +465,6 @@ const nextMusic = ()=>{
         download.setAttribute('download', songName);
     });
     makeAllPlay();
-    el.target.classList.remove('bi-play-fill');
-    el.target.classList.add('bi-pause');
     wave.classList.add('active1');
 }
 
@@ -457,6 +484,7 @@ const repeatMusic = ()=>{
         title.innerHTML = songName;
         download.setAttribute('download', songName);
     });
+    makeAllPlay();
     wave.classList.add('active1');
 }
 
@@ -481,8 +509,11 @@ const randomMusic = ()=>{
         title.innerHTML = songName;
         download.setAttribute('download', songName);
     });
+    makeAllPlay();
     wave.classList.add('active1');
 }
+
+// setting what will happen when a song is over
 
 music.addEventListener('ended', ()=>{
     let b = shuffle.innerHTML;
@@ -498,6 +529,8 @@ music.addEventListener('ended', ()=>{
             break;
     }
 });
+
+// setting the play button 
 
 let start = document.getElementById('play1');
 start.addEventListener('click', ()=>{
@@ -516,5 +549,20 @@ start.addEventListener('click', ()=>{
         title.innerHTML = songName;
         download.setAttribute('download', songName);
     });
+    makeAllPlay();
     wave.classList.add('active1');
+});
+
+
+let threedot = document.getElementById('threedot');
+let cross = document.getElementById('cross');
+let menu = document.getElementsByClassName('menu_side')[0];
+let main = document.getElementsByClassName('song_side')[0];
+threedot.addEventListener('click', ()=>{
+    menu.classList.remove('v-class');
+    main.classList.add('v-class');
+});
+cross.addEventListener('click', ()=>{
+    menu.classList.add('v-class');
+    main.classList.remove('v-class');
 });

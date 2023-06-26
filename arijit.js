@@ -280,6 +280,7 @@ back.addEventListener('click', ()=>{
     }
     music.src = `music/arijit_song/${index}.mp3`;
     music.play();
+    poster_master_play.src = `img/arijit_img/${index}.jpg`;
     masterPlay.classList.remove('bi-play-fill');
     masterPlay.classList.add('bi-pause');
     download.href = `music/arijit_song/${index}.mp3`;
@@ -295,7 +296,6 @@ back.addEventListener('click', ()=>{
     el.target.classList.remove('bi-play-fill');
     el.target.classList.add('bi-pause');
     wave.classList.add('active1');
-    poster_master_play.src = `img/arijit_img/${index}.jpg`;
 });
 
 next.addEventListener('click', ()=>{
@@ -380,9 +380,9 @@ const nextMusic = ()=>{
     else{
         index++;
     }
-    poster_master_play.src = `img/arijit_img/${index}.jpg`;
     music.src = `music/arijit_song/${index}.mp3`;
     music.play();
+    poster_master_play.src = `img/arijit_img/${index}.jpg`;
     masterPlay.classList.remove('bi-play-fill');
     masterPlay.classList.add('bi-pause');
     download.href = `music/arijit_song/${index}.mp3`;
@@ -472,4 +472,17 @@ start.addEventListener('click', ()=>{
         download.setAttribute('download', songName);
     });
     wave.classList.add('active1');
+});
+
+let threedot = document.getElementById('threedot');
+let cross = document.getElementById('cross');
+let menu = document.getElementsByClassName('menu_side')[0];
+let main = document.getElementsByClassName('song_side')[0];
+threedot.addEventListener('click', ()=>{
+    menu.classList.remove('v-class');
+    main.classList.add('v-class');
+});
+cross.addEventListener('click', ()=>{
+    menu.classList.add('v-class');
+    main.classList.remove('v-class');
 });

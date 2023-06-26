@@ -437,3 +437,16 @@ start.addEventListener('click', ()=>{
     });
     wave.classList.add('active1');
 });
+
+let threedot = document.getElementById('threedot');
+let cross = document.getElementById('cross');
+let menu = document.getElementsByClassName('menu_side')[0];
+let main = document.getElementsByClassName('song_side')[0];
+threedot.addEventListener('click', ()=>{
+    menu.classList.remove('v-class');
+    main.classList.add('v-class');
+});
+cross.addEventListener('click', ()=>{
+    menu.classList.add('v-class');
+    main.classList.remove('v-class');
+});
