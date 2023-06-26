@@ -37,7 +37,7 @@ header .master_play{
     width: 100%;
     height: 10%;
     /* background-color: #111727; */
-    background-color: #A7754D;
+    background-color: #4c5262;
     box-shadow: 0px 3px 8px #090f1f;
     /* border: 1px solid #ffffff; */
 }
@@ -441,6 +441,7 @@ header .song_side nav ul{
     top: 12px;
     left: 15px;
     cursor: pointer;
+    display: none;
 }
 .cross .bi{
     font-size: 30px;
@@ -559,6 +560,7 @@ header .song_side nav .user img{
     box-shadow: 2px 2px 8px #121213;
     margin-left: 40px;
     margin-top: 5px;
+    background-color: #EAB464;
 }
 header .song_side .content{
     width: 90%;
@@ -756,6 +758,9 @@ header .song_side .popular_artist .item li img{
     .threedot{
         display: block;
     }
+    .cross{
+        display: block;
+    }
     .menu_side{
         /* display: none; */
         min-width: 100%;
@@ -826,8 +831,12 @@ header .song_side .popular_artist .item li img{
         height: 50px;
         width: 50px;
     }
+    header .song_side .popular_artist .item li img{
+        height: 50px;
+        width: 50px;
+    }
     header .song_side .popular_artist p{
-        margin-left: 6px;
+        margin-left: 10px;
     }
     header .master_play{
         height: 20%;
@@ -866,6 +875,9 @@ header .song_side .popular_artist .item li img{
     }
     .v-class{
         display: none;
+    }
+    header .master_play{
+        background-color: #4c5262;
     }
 }
 
