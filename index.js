@@ -148,6 +148,348 @@ const songs = [
         songName: `Thoda Aur<br>
         <div class="subtitle">Arijit Singh</div>`,
         poster: "img/24.jpg"
+    },
+    {
+        id: '25',
+        songName: `Alo Alo<br> 
+        <div class="subtitle">Tahsan Khan</div>`,
+        poster: "img/25.jpg"
+    },
+    {
+        id: '26',
+        songName: `Bhalobashi Tai<br> 
+        <div class="subtitle">Tahsan Khan</div>`,
+        poster: "img/26.jpg"
+    },
+    {
+        id: '27',
+        songName: `Chile Amar<br> 
+        <div class="subtitle">Tahsan Khan</div>`,
+        poster: "img/27.jpg"
+    },
+    {
+        id: '28',
+        songName: `Ektai Tumi<br> 
+        <div class="subtitle">Tahsan Khan</div>`,
+        poster: "img/28.jpg"
+    },
+    {
+        id: '29',
+        songName: `Joto Vul<br> 
+        <div class="subtitle">Tahsan Khane</div>`,
+        poster: "img/29.jpg"
+    },
+    {
+        id: '30',
+        songName: `Ke Tumi<br> 
+        <div class="subtitle">Tahsan Khan</div>`,
+        poster: "img/30.jpg"
+    },
+    {
+        id: '31',
+        songName: `Keu Na Januk<br> 
+        <div class="subtitle">Tahsan Khan</div>`,
+        poster: "img/31.jpg"
+    },
+    {
+        id: '32',
+        songName: `Prottaborton<br> 
+        <div class="subtitle">Tahsan Khan</div>`,
+        poster: "img/32.jpg"
+    },
+    {
+        id: '33',
+        songName: `Prematal<br> 
+        <div class="subtitle">Tahsan Khan</div>`,
+        poster: "img/33.jpg"
+    },
+    {
+        id: '34',
+        songName: `Prem Tumi<br> 
+        <div class="subtitle">Tahsan Khan</div>`,
+        poster: "img/34.jpg"
+    },
+    {
+        id: '35',
+        songName: `Bhalobashar Mane<br> 
+        <div class="subtitle">Tahsan Khan</div>`,
+        poster: "img/35.jpg"
+    },
+    {
+        id: '36',
+        songName: `Chuye Dile Mon<br> 
+        <div class="subtitle">Tahsan Khan</div>`,
+        poster: "img/36.jpg"
+    },
+    {
+        id: '37',
+        songName: `Tumi Moy<br> 
+        <div class="subtitle">Tahsan Khan</div>`,
+        poster: "img/37.jpg"
+    },
+    {
+        id: '38',
+        songName: `Aankhon Mein Teri<br> 
+        <div class="subtitle">K K</div>`,
+        poster: "img/38.jpg"
+    },
+    {
+        id: '39',
+        songName: `Beete Lamhe<br> 
+        <div class="subtitle">K K</div>`,
+        poster: "img/39.jpg"
+    },
+    {
+        id: '40',
+        songName: `Dil Ibaadat<br> 
+        <div class="subtitle">K K</div>`,
+        poster: "img/40.jpg"
+    },
+    {
+        id: '41',
+        songName: `Dus Bahane<br> 
+        <div class="subtitle">K K</div>`,
+        poster: "img/41.jpg"
+    },
+    {
+        id: '42',
+        songName: `Haan Tu Hain<br> 
+        <div class="subtitle">K Ke</div>`,
+        poster: "img/42.jpg"
+    },
+    {
+        id: '43',
+        songName: `Humko Pyar Hua<br> 
+        <div class="subtitle">K K</div>`,
+        poster: "img/43.jpg"
+    },
+    {
+        id: '44',
+        songName: `I Am In Love<br> 
+        <div class="subtitle">K K</div>`,
+        poster: "img/44.jpg"
+    },
+    {
+        id: '45',
+        songName: `Kabhi Aayine Pe<br> 
+        <div class="subtitle">K K</div>`,
+        poster: "img/45.jpg"
+    },
+    {
+        id: '46',
+        songName: `Khuda Jaane<br> 
+        <div class="subtitle">K K</div>`,
+        poster: "img/46.jpg"
+    },
+    {
+        id: '47',
+        songName: `Kya Mujhe Pyar Hain<br> 
+        <div class="subtitle">K K</div>`,
+        poster: "img/47.jpg"
+    },
+    {
+        id: '48',
+        songName: `Laapata<br> 
+        <div class="subtitle">K K</div>`,
+        poster: "img/48.jpg"
+    },
+    {
+        id: '49',
+        songName: `Abhi Abhi Toh<br> 
+        <div class="subtitle">K K</div>`,
+        poster: "img/49.jpg"
+    },
+    {
+        id: '50',
+        songName: `Labon Ko<br> 
+        <div class="subtitle">K K</div>`,
+        poster: "img/50.jpg"
+    },
+    {
+        id: '51',
+        songName: `Desi Boyz<br> 
+        <div class="subtitle">K K</div>`,
+        poster: "img/51.jpg"
+    },
+    {
+        id: '52',
+        songName: `Mera Pehla Pehla Pyar<br> 
+        <div class="subtitle">K K</div>`,
+        poster: "img/52.jpg"
+    },
+    {
+        id: '53',
+        songName: `Mere Bina<br>
+        <div class="subtitle">K K</div>`,
+        poster: "img/53.jpg"
+    },
+    {
+        id: '54',
+        songName: `Meri Maa<br>
+        <div class="subtitle">K K</div>`,
+        poster: "img/54.jpg"
+    },
+    {
+        id: '55',
+        songName: `Piya Aaye Na<br>
+        <div class="subtitle">K K</div>`,
+        poster: "img/55.jpg"
+    },
+    {
+        id: '56',
+        songName: `Alvida<br>
+        <div class="subtitle">K K</div>`,
+        poster: "img/56.jpg"
+    },
+    {
+        id: '57',
+        songName: `Sach Keh Raha Hain Deewana<br>
+        <div class="subtitle">K K</div>`,
+        poster: "img/57.jpg"
+    },
+    {
+        id: '58',
+        songName: `Sajde kiye Hain Lakhon<br>
+        <div class="subtitle">K K</div>`,
+        poster: "img/58.jpg"
+    },
+    {
+        id: '59',
+        songName: `Teri Yaadon Mein<br>
+        <div class="subtitle">K K</div>`,
+        poster: "img/59.jpg"
+    },
+    {
+        id: '60',
+        songName: `Tu Hi Meri Shab Hain<br>
+        <div class="subtitle">K K</div>`,
+        poster: "img/60.jpg"
+    },
+    {
+        id: '61',
+        songName: `Tujhe Sochta Hoon<br>
+        <div class="subtitle">K K</div>`,
+        poster: "img/61.jpg"
+    },
+    {
+        id: '62',
+        songName: `Tu Jo Mila<br>
+        <div class="subtitle">K K</div>`,
+        poster: "img/62.jpg"
+    },
+    {
+        id: '63',
+        songName: `Zara Sa<br>
+        <div class="subtitle">K K</div>`,
+        poster: "img/63.jpg"
+    },
+    {
+        id: '64',
+        songName: `Zindegi Do Pal Ki<br>
+        <div class="subtitle">K K</div>`,
+        poster: "img/64.jpg"
+    },
+    {
+        id: '65',
+        songName: `Aadat<br> 
+        <div class="subtitle">Atif Aslam</div>`,
+        poster: "img/65.jpg"
+    },
+    {
+        id: '66',
+        songName: `Musafir<br> 
+        <div class="subtitle">Atif Aslam</div>`,
+        poster: "img/66.jpg"
+    },
+    {
+        id: '67',
+        songName: `Pehli Dafa<br> 
+        <div class="subtitle">Atif Aslam</div>`,
+        poster: "img/67.jpg"
+    },
+    {
+        id: '68',
+        songName: `Be Intehaan<br> 
+        <div class="subtitle">Atif Aslam</div>`,
+        poster: "img/68.jpg"
+    },
+    {
+        id: '69',
+        songName: `Dekhte Dekhte<br> 
+        <div class="subtitle">Atif Aslame</div>`,
+        poster: "img/69.jpg"
+    },
+    {
+        id: '70',
+        songName: `Dil Diya Gallan<br> 
+        <div class="subtitle">Atif Aslam</div>`,
+        poster: "img/70.jpg"
+    },
+    {
+        id: '71',
+        songName: `Jeena Jeena<br> 
+        <div class="subtitle">Atif Aslam</div>`,
+        poster: "img/71.jpg"
+    },
+    {
+        id: '72',
+        songName: `Pehli Nazar Mein<br> 
+        <div class="subtitle">Atif Aslam</div>`,
+        poster: "img/72.jpg"
+    },
+    {
+        id: '73',
+        songName: `Rang Jo Lagyo<br> 
+        <div class="subtitle">Atif Aslam</div>`,
+        poster: "img/73.jpg"
+    },
+    {
+        id: '74',
+        songName: `Piya Ore Piya<br> 
+        <div class="subtitle">Atif Aslam</div>`,
+        poster: "img/74.jpg"
+    },
+    {
+        id: '75',
+        songName: `Jeene Laga Hoon<br> 
+        <div class="subtitle">Atif Aslam</div>`,
+        poster: "img/75.jpg"
+    },
+    {
+        id: '76',
+        songName: `Tera Hua<br> 
+        <div class="subtitle">Atif Aslam</div>`,
+        poster: "img/76.jpg"
+    },
+    {
+        id: '77',
+        songName: `Tere Bin<br> 
+        <div class="subtitle">Atif Aslam</div>`,
+        poster: "img/77.jpg"
+    },
+    {
+        id: '78',
+        songName: `Tere Liye<br> 
+        <div class="subtitle">Atif Aslam</div>`,
+        poster: "img/78.jpg"
+    },
+    {
+        id: '79',
+        songName: `Tere Sang Yaara<br> 
+        <div class="subtitle">Atif Aslam</div>`,
+        poster: "img/79.jpg"
+    },
+    {
+        id: '80',
+        songName: `Tu Chahiye<br> 
+        <div class="subtitle">Atif Aslam</div>`,
+        poster: "img/80.jpg"
+    },
+    {
+        id: '81',
+        songName: `Tu Jaane Na<br> 
+        <div class="subtitle">Atif Aslam</div>`,
+        poster: "img/81.jpg"
     }
 ];
 
@@ -189,7 +531,7 @@ masterPlay.addEventListener('click',()=>{
     makeAllPlay();
 });
 
-// adding to search results with their title and poster
+// adding cards to search results with their title and poster
 
 let search_result = document.getElementsByClassName('search_result')[0];
 songs.forEach(element => {

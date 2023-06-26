@@ -302,7 +302,7 @@ header .master_play .bar{
 }
 header .master_play .bar .bar2{
     position: absolute;
-    background: #16324F;
+    background: #FFD447;
     width: 0%;
     height: 100%;
     top: 0;
@@ -313,7 +313,7 @@ header .master_play .bar .dot{
     position: absolute;
     width: 15px;
     height: 15px;
-    background: #16324F;
+    background: #FFD447;
     border-radius: 50%;
     left: -10px;
     top: -7px;
